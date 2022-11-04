@@ -6,6 +6,9 @@
   "emailVerificationRequired": false,
   "trackChanges": false,
   "properties": {
+    "tenantId": {
+      "type": "string"
+    },
     "email": {
       "type": "string",
       "index": {

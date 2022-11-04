@@ -85,7 +85,8 @@ const authUser = {
   isDonating: envVariables.includes('--donor'),
   emailAuthLinkTTL: null,
   emailVerifyTTL: null,
-  keyboardShortcuts: true
+  keyboardShortcuts: true,
+  tenantId: 'local'
 };
 
 const blankUser = {
@@ -143,7 +144,8 @@ const blankUser = {
   },
   isDonating: false,
   emailAuthLinkTTL: null,
-  emailVerifyTTL: null
+  emailVerifyTTL: null,
+  tenantId: 'local'
 };
 
 MongoClient.connect(MONGOHQ_URL, { useNewUrlParser: true }, (err, client) => {
